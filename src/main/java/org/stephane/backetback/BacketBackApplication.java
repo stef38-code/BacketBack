@@ -8,7 +8,7 @@ import org.springframework.context.annotation.Bean;
 import org.stephane.backetback.jpa.entities.Genre;
 import org.stephane.backetback.jpa.entities.Personne;
 import org.stephane.backetback.jpa.entities.PersonneBuilder;
-import org.stephane.backetback.jpa.entities.PersonneRepository;
+import org.stephane.backetback.jpa.repository.PersonneRepository;
 
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
@@ -133,7 +133,7 @@ public class BacketBackApplication {
 
     private void addPersonne(PersonneRepository repository, String nom, String prenom, Genre genre, String dnaissance) {
         Personne prs = PersonneBuilder.create()
-                .id(UUID.randomUUID())
+                .id(UUID.randomUUID().toString())
                 .nom(nom)
                 .prenom(prenom)
                 .genre(genre)

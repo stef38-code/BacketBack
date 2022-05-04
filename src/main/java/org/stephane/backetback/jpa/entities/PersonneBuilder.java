@@ -4,7 +4,7 @@ import java.time.LocalDate;
 import java.util.UUID;
 
 public final class PersonneBuilder {
-    private UUID id;
+    private String id;
     private String nom;
     private String prenom;
     private LocalDate dnaissance;
@@ -17,7 +17,7 @@ public final class PersonneBuilder {
         return new PersonneBuilder();
     }
 
-    public PersonneBuilder id(UUID id) {
+    public PersonneBuilder id(String id) {
         this.id = id;
         return this;
     }

@@ -1,6 +1,7 @@
-package org.stephane.backetback.jpa.entities;
+package org.stephane.backetback.jpa.repository;
 
 import org.springframework.data.jpa.repository.JpaRepository;
+import org.stephane.backetback.jpa.entities.Personne;
 
 import java.util.UUID;
 

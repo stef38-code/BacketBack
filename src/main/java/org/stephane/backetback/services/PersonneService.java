@@ -1,9 +1,9 @@
 package org.stephane.backetback.services;
 
-import org.stephane.backetback.jpa.entities.Personne;
+import org.stephane.backetback.share.dto.PersonneDto;
 
 import java.util.List;
 
 public interface PersonneService {
-    List<PersonneDTo> getAll();
+    List<PersonneDto> getAll();
 }
