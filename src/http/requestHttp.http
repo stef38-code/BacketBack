@@ -2,3 +2,8 @@
 # @name ListeTousLesJoueurs
 //@no-log
 GET http://localhost:8080/personnes
+
+### Liste tous les categories
+# @name ListeTousLesCategories
+//@no-log
+GET http://localhost:8080/categories
