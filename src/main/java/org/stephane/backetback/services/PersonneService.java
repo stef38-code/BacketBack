@@ -1,6 +1,6 @@
 package org.stephane.backetback.services;
 
-import org.stephane.backetback.share.dto.PersonneDto;
+import org.stephane.backetback.share.dto.personne.PersonneDto;
 
 import java.util.List;
 

@@ -1,9 +1,10 @@
 package org.stephane.backetback.share.mapper.factory;
 
+import org.stephane.backetback.share.mapper.CategorieDtoMapper;
 import org.stephane.backetback.share.mapper.PersonneDtoMapper;
 
 public enum TypeServiceMapperDto {
-    PERSONNE(PersonneDtoMapper.class);
+    PERSONNE(PersonneDtoMapper.class), CATEGORIE(CategorieDtoMapper.class);
 
     private Class<? extends ServiceMapperDto> mapperClass;
 

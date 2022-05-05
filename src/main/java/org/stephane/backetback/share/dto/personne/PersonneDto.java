@@ -1,15 +1,16 @@
-package org.stephane.backetback.share.dto;
+package org.stephane.backetback.share.dto.personne;
 
 import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
 import com.fasterxml.jackson.databind.annotation.JsonSerialize;
 import com.fasterxml.jackson.datatype.jsr310.deser.LocalDateDeserializer;
 import com.fasterxml.jackson.datatype.jsr310.ser.LocalDateSerializer;
 import lombok.*;
-import org.stephane.backetback.jpa.entities.Genre;
+import org.stephane.backetback.jpa.entities.personne.Genre;
 
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.Past;
 import java.time.LocalDate;
+import java.util.Set;
 
 @Getter
 @Setter
@@ -27,5 +28,6 @@ public class PersonneDto {
     @JsonSerialize(using = LocalDateSerializer.class)
     private LocalDate dnaissance;
     private Genre genre;
-
+    private String nlicence;
+    private Set<AdresseDto> adresses;
 }

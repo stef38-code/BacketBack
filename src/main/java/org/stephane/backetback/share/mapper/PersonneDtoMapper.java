@@ -1,9 +1,8 @@
 package org.stephane.backetback.share.mapper;
 
 import org.mapstruct.Mapper;
-import org.mapstruct.Mapping;
-import org.stephane.backetback.jpa.entities.Personne;
-import org.stephane.backetback.share.dto.PersonneDto;
+import org.stephane.backetback.jpa.entities.personne.Personne;
+import org.stephane.backetback.share.dto.personne.PersonneDto;
 import org.stephane.backetback.share.mapper.factory.ServiceMapperDto;
 
 @Mapper
